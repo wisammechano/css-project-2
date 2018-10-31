@@ -1,0 +1,134 @@
+<!DOCType html>
+<html lang="en">
+
+<head>
+    <title>Exotic places for your next Vacation!</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Acme|KoHo|Fredoka+One');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            background: url("./bg.jpg") no-repeat 10%;
+            background-size: 100%;
+            height: 100vh;
+            width: 100%;
+            color: white;
+        }
+
+        nav {
+            text-align: right;
+            background: rgba(0,0,0,0.5)
+        }
+
+        nav ul {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        nav li {
+            font-family: "Fredoka One";
+            text-align: center;
+            display: inline-block;
+            width: 110px;
+            margin: 0 5px;
+            border: 1px solid transparent;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            transition: all 0.2s ease-in;
+        }
+
+        nav li:hover {
+            background: rgba(255,255,255,0.5);
+            border: 1px solid white;
+        }
+
+        h1 {
+            font-family: "KoHo";
+            font-weight: bold;
+            font-size: 50pt;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-family: "Acme";
+            font-size: 18pt;
+        }
+
+        main {
+            text-shadow: 2px 2px rgba(0,0,0,0.3);
+            margin: 150px 0;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        form {
+            margin: 50px;
+        }
+
+        input, select {
+            font-family: "Fredoka One";
+            padding: 8px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            margin: 0 10px;
+            width: 250px;
+        }
+
+        input[type="submit"] {
+            background: #ff6334;
+            color: #fff;
+        }
+		
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Lifestyle</li>
+                <li>Tours</li>
+                <li>Booking</li>
+                <li>Destinations</li>
+                <li>Souvenirs</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Where do you want to go?</h1>
+            <h3>Trips, experiences, and places. All in one service.</h3>
+            <form>
+                <input type="text" name="destination" placeholder="Destintion, city">
+                <input type="text" name="month" placeholder="Month">
+                <select name="Trip">
+                    <option value="car">Car Trip</option>
+                    <option value="flight">Plane Flight</option>
+                    <option value="train">Trane Trip</option>
+                </select>
+                <input type="submit" value="Search">
+            </form>
+        </main>
+		<footer>&copy; All rights reserved. Qaraqosh-Coders 2018.</footer>
+    </div>
+</body>
+
+</html>
